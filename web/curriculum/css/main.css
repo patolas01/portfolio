@@ -15,12 +15,12 @@ body {
     --bg-color-light: #e0e0e0;
     --bg-color-dark: #20242b;
     --bg-subtitle-dark: #8f8f8f;
-    
+
 }
 
 div.top-info,
 div.more-info {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 65svw;
     padding: 3rem;
 }
@@ -52,19 +52,64 @@ div.more-info {
     border-radius: 50%;
 }
 
-div.location{
+div.location {
     display: flex;
     align-items: center;
-    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
 }
 
 
-img#location-icon{
+img#location-icon {
     width: 1.5rem;
     height: auto;
     margin-right: 0.5rem;
 }
+
+ul {
+    padding-inline-start: 0px;
+}
+
+li {
+    transition-duration: 150ms;
+    margin: 0;
+    padding: 0px 0px 0px 25px;
+    list-style: none;
+    background-image: url(../img/arrow-icon-1174.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px;
+    width: 100%;
+}
+
+li {
+    display: flex;
+}
+
+li:hover {
+    transform: scale(100.5%);
+}
+
+a {
+    transition-duration: 200ms;
+    text-decoration: none;
+    color: #217aff;
+}
+
+a:hover {
+    color: #a3cbff;
+}
+
+li p:last-child {
+    color: #8f8f8f;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+/* li::marker {
+    content: url(../img/arrow-icon-1174.png);
+    font-size: 1em;
+} */
 
 .name {
     font-size: 2.5em;
@@ -77,12 +122,12 @@ img#location-icon{
     color: var(--bg-subtitle-dark);
 }
 
-.section{
+.section {
     margin: 2.5rem 0;
     border-top: 1px solid #8f8f8f71;
 }
 
-.section:nth-child(1){
+.section:nth-child(1) {
     border-top: 1px solid #8f8f8f71;
 }
 
@@ -109,4 +154,67 @@ img#location-icon{
     font-size: 1.1em;
     margin: 0;
     color: var(--bg-subtitle-dark);
+}
+
+
+div.skill-bar {
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+    margin-left: 0;
+    margin-right: 4.5rem;
+    display: grid;
+    align-items: center;
+
+}
+
+div.skills-grid {
+    margin-top: 1rem;
+    height: auto;
+    max-width: 80svw;
+    /* display: flex; */
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+progress {
+
+    height: 1.48em;
+
+    width: 15rem;
+
+    margin-top: 0.3rem;
+
+
+}
+
+.skills-grid div.skill-bar progress {
+    accent-color: rgb(46, 85, 255);
+}
+
+.socials {
+    display: flex;
+    width: 65svw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.socials i img {
+    transition-duration: 400ms;
+    filter: invert(38%) sepia(1%) saturate(0%) hue-rotate(161deg) brightness(97%) contrast(86%);
+    width: 1.8rem;
+}
+
+.socials i {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+
+.socials i:hover img {
+    filter: invert(99%) sepia(0%) saturate(91%) hue-rotate(255deg) brightness(80%) contrast(97%);
+}
+
+.atual{
+    font-size: 150%;
+    font-style: italic;
 }
